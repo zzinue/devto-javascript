@@ -1,5 +1,3 @@
-console.log("js")
-
 
 
  $('.chkd').click(function() {
