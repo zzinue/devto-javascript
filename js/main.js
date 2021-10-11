@@ -123,8 +123,10 @@ const printPost = arrayPots => {
             </span> 
             </div>
         <div> 4 min read 
-            <button>Save</button></div>
-            <button data-product-id="${id}" value="${id}" class="Del btn btn-danger">Eliminar <i class="fas fa-cart-plus"></i></button>    
+            <button>Save</button>
+            <button data-product-id="${id}" value="${id}" class="Del btn btn-danger">Eliminar <i class="fas fa-cart-plus"></i></button>
+            </div>
+                
         </div>
     </article>
         `
