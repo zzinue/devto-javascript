@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>DEV Post</title>
+</head>
+
+<div class="container p-2">
+    <div class="row no-gutters justify-content-md-center justify-content-lg-center align-content-center">
+      
+      <div class="d-none d-md-block col-md-1 col-lg-1 asideleft column">
+        <div class="row flex-column align-content-center mt-5">
+              <!-- Lateral Izquierdo -->
+            <div id="h-izq" class="col-1 d-flex flex-column justify-content-around align-items-center">
+            <div id="h-blank-div"></div>
+
+            <div class="d-flex flex-column align-items-center h-icon-number">
+                <svg id="h-heart" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg>
+                <p class="h-p" style="font-size: 0.8em">9</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center h-icon-number">
+                <svg id="h-star" xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                </svg>
+                <p class="h-p"  style="font-size: 0.8em">5</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center h-icon-number">
+                <svg id="h-mark" xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-bookmark" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                </svg>
+                <p class="h-p"  style="font-size: 0.8em">3</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center h-icon-number">
+                <svg id="h-more" xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                </svg>
+            </div>
+  
+            </div>
+        </div>
+    </div>
+  
+  
+      <main class="col-12 col-md-7 col-lg-7  mymain  ">
+
+
+        <!---------------------------------comienza el main del post---------------------------------------------------------------->
+  
+        <div class="nodejs-coverpage">
+            <img width="751px" height="315px" src="IMG/nodejs.png" class="rounded w-100 img-fluid" alt="">
+        </div>
+
+        <article class="contenedor-post m-1 ">
+            <div class="px-2">
+                <div class="my-3" id="autor">
+                    <img width="50px" src="IMG/perfil.jpg" alt="">
+                        <a class="font-weight-bold py-1" href="#">McLorian13</a>
+                    <span class="mx-2">Oct 11 ・ 1 hr. read</span>
+              </div>
+            
+            <h1 class="react d-inline-block mt-3 mt-lg-5 mb-md-2 mb-lg-3 font-weight-bold">
+              Build a Node.js API in Under 30 Minutes
+            </h1>
+            
+            <nav class="hashtagNav-btn bg-white">
+                <button style="color: grey" type="button" class="mx-1 btn btn-sm">#webdev</button>
+                <button style="color: grey" type="button" class="mr-1 btn btn-sm">#javascript</button>
+                <button style="color: grey" type="button" class="mr-1 btn btn-sm">#begginers</button>
+                <button style="color: grey" type="button" class="mr-1 btn btn-sm">#node</button>
+            </nav>
+
+
+            <article class="mt-4 ">
+                <p>
+                    <span class="font-weight-bold">Node.js</span>
+                    can be intimidating to beginners. But its flexible structure and lack of strict guidelines makes it seem more 
+                    complicated than it is.
+                    This tutorial is a quick and simple guide to Node.js, the Express framework, and MongoDB, focusing on the fundamental 
+                    REST routes and basic database interaction. 
+                    You’ll build a simple API boilerplate that can then be used as the foundation for any app.
+                    <span class="font-weight-bold">Who This Tutorial Is For:</span>
+                    You should have a basic understanding of REST APIs and CRUD operations, plus basic JavaScript knowledge. I use ES6 (mainly fat-arrow functions), 
+                    but nothing too complex.
+                    For this tutorial, you’ll create the skeleton of a back-end for a note-taking application — think Google Keep. You want to be able to do all four CRUD actions 
+                    on your notes: create, read, update, and delete.
+                </p>
+  
+                <h4 class="font-weight-bold">
+                    Setting Up
+                </h4>
+                <p>
+                    If you don’t have Node installed, see here.
+                    In a new directory, run npm init, and follow along with the prompts, giving your app the name of ‘notable’ 
+                    (or whatever else you might like).
+                </p>
+  
+              <!--Aqui incertar una imagen-->
+                <img src="IMG/init.png" alt="">
+                    <p>
+                        <br>
+                        Once that’s done, you should have a package.json ready to go in your directory. 
+                        This means you can start installing the dependencies you need for your project.
+                        You’re going to use Express as your framework, MongoDB as the database, and a package
+                        called body-parser to help deal with JSON requests.
+                        <br>
+                    </p>
+              
+                <img src="IMG/save.png" alt="">
+                <br><br>
+                
+                <p> You can then add the following script to package.json:
+                    <br>
+                    I also highly recommend installing Nodemon as a dev dependency. It’s a simple little package that automatically 
+                    restarts your server when files change. If you run:
+                </p>
+
+                <img src="IMG/init.png" alt="">
+
+                <p>
+                    <br>
+                    You can then add the following script to package.json:
+                </p>
+                
+                <img src="IMG/json.png" alt="">
+              
+                <p>
+                    <br>
+                    Your complete package.json should look like this:
+                </p>
+  
+                <img src="IMG/package.png" alt="">
+
+                <p>
+                    <br>
+                    Now you can create your server.js file and start building your API.
+                </p>
+
+                <h4 class="font-weight-bold">
+                    Our Server
+                </h4>
+
+                <p>
+                    <br>
+                    Let’s start by requiring all your dependencies in server.js.
+                </p>
+
+                <img src="IMG/Serverjs.png" alt="">
+
+                <p>
+                    <br>
+                    You’re going to use the MongoClient to interact with your database. Note that you also initialize your 
+                    app as an instance of Express, your framework. The last thing you need to do to get your server up and running
+                    is to tell your app to start listening for HTTP requests.
+                    You can specify a port, and start the listening like so:
+                </p>
+
+                <img src="IMG/save.png" alt="">
+
+                <div class="border-left my-3 border-secondary">
+                    <p class="mx-4">📝 Variables in 
+                        <span class="rounded env">.env.production</span>
+                        will be used as fallback because 
+                        <span class="rounded env">NODE_ENV</span> 
+                        will always be set to production for a build.
+                    </p>
+                </div>
+
+                <h4 class="py-1 font-weight-bold">
+                    CRUDdy Routes
+                </h4>
+                <p>
+                    For this example, you want to build 4 routes; to CREATE a note, to READ your notes, to UPDATE a note, and to DELETE a note.
+                    This will give you a good idea of how to structure almost any basic route with Node.
+                    To test your API, though, you need to mimic a client side making requests. To do so, 
+                    you’ll use a great app called Postman. It allows you to make simple HTTP requests with custom bodies and parameters.
+                    Install Postman, and let’s start setting up your routes.
+                </p>
+                <h4 class="py-1 font-weight-bold">
+                    Super Organized
+                </h4>
+                <p>
+                    Most Node.js tutorials (and many real apps) put all their routes in one big routes.js file. This makes me a wee bit uncomfortable. 
+                    In contrast, splitting up your files into separate folders leads to good readability, and makes big apps more manageable.
+                    You don’t have a big app, but let’s do this right. Make the following directories: an app folder with a routes folder inside it, 
+                    with an index.js and a note_routes.js file inside it.
+                    In other words: root > app > routes > index.js and note_routes.js.
+                </p>
+                <span class="rounded env">NODE_APP_.s</span>
+                <div class="px-4 my-3 py-1 py-lg-4 m consola rounded border ">
+                    <p class=" mb-0 rojo">title <span class="blanco">%NODEJS_APP_NAME%</span> title></p>
+                </div>
+                <p>Define permanent environment variables in <span class="rounded env">.env file</span> in root of the
+                    project.</p>
+                <p class="font-weight-bold">.env:</p>
+                <div class="px-4  py-1 py-lg-4 consola rounded border ">
+                    NODEJS_APP_NAME <span class="rojo">=</span> ProjectName
+                </div>
+                <p class="pt-3">📝 Remember to restart the server when you make any changes in .env file.</p>
+    
+                <h4 class=" px-1">Reference 🧐</h4>
+                <ul class="myul">
+                    <li><a href=""><u>CRA env variables for build env</u> </a></li>
+                    <li><a href=""><u>CRA adding custom environment variables</u> </a></li>
+                    <li><a href=""><u>CRA deployment docs</u> </a></li>
+                </ul>
+                <h4 class="px-1">Summary ⅀</h4>
+                <p class="pl-1">If you want to add any other env which is not mentioned in nodejs app, you have to setup
+                    env-cmd and can use it. Also,
+                    you can use .env variables in HTML file using NODE_APP_
+                    <span class="py-3 d-block">Thanks for reading the article ❤️</span>
+    
+                </p>
+                <div class="d-flex justify-content-center">
+                    <img src="images/cafe.png" alt="invitame a un cafe">
+                </div>
+    
+                <table class="m-3  table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td><a class="" href=""> 🌟<u> Instagram</u> </a></td>
+                        <td><a class="" href=""> 📚<u> Ebooks</u> </a></td>
+                        <td><a class="" href=""> 🌟<u> Twitter</u> </a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
+            </div>
+        </article>
+
+        <!---contenedor-post -->
+        
+        <article>
+          <div>
+            <div class=" d-flex justify-content-between pt-4">
+              <h5 class="card-title ml-4"> Discussion (3)</h5>
+              <a href="#" class="mr-4 btn btn-primary subscribe">Subscribe</a>
+            </div>
+            <div class="card-body">
+              <div class="row no-gutters align-items-center pt-4">
+                <div class="col-1 avatar-read "><img src="images/1read.png"></div>
+                <div class="col-11 title-read d-flex flex-column pl-1">
+                  <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Add to discussion</textarea>
+                    <!-- <button type="submit" class="btn btn-primary">Sign in</button>
+                              <button type="submit" class="btn btn-primary">Sign in</button>
+                              </div>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--write see-->
+            <article>
+              <div class="card-body ">
+                <div> <a data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+                    aria-controls="collapseExample1">
+                    <span class="material-icons">expand_more </span>
+                  </a>
+                </div>
+                <div id="collapseExample1">
+                  <div class="row no-gutters  align-items-center pt-4">
+                    <div class=" col-1 d-flex flex-column justify-content-center align-items-center ">
+                      <div class="avatar-read "><img src="images/comet-avatar.png"></div>
+                      <span data-toggle="collapse" href="#collapseExample1" class="material-icons">expand_more </span>
+                      <span data-toggle="collapse" href="#collapseExample1" class="material-icons">expand_less </span>
+                    </div>
+                    <div class="col-11 title-read d-flex flex-column pl-1 ">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-star">
+                            <div class="d-flex justify-content-center align-items-star">
+                              <h5 class="card-title name-dis">R. Maulana Citra</h5> <span class="date">• Aug 22</span>
+                            </div>
+                            <div><button type="button" class="btn btn-light" data-container="body" data-toggle="popover"
+                                data-placement="bottom" data-content="Copy Link <br> Report abuse"> ...
+                              </button></div>
+                          </div>
+                          <br>
+                          <p class="card-text">Thanks for sharing🤩, nice article</p>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row  no-gutters ml-md-5 pt-3 pl-4 justify-content-start  align-items-center flex-nowrap">
+                    <div class="heart d-flex flex-row">
+                      <div><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                          </path>
+                        </svg></div>
+                      <div>2</div>
+                      <div class="d-none d-md-block pl-md-1"><span>likes</span></div>
+                    </div>
+  
+                    <div class="comments d-flex flex-row">
+                      <div><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                          </path>
+                        </svg></div>
+                      <div class="d-none d-md-block pl-md-1"> <span>Reply</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+  
+            <article>
+              <div class="card-body ">
+                <div> <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <span class="material-icons">expand_more </span>
+                  </a>
+                </div>
+                <div id="collapseExample">
+                  <div class="row no-gutters  align-items-center pt-4">
+                    <div class=" col-1 d-flex flex-column justify-content-center align-items-center ">
+                      <div class="avatar-read "><img src="images/coment_avatar2.png"></div>
+                      <span data-toggle="collapse" href="#collapseExample" class="material-icons">expand_more </span>
+                      <span data-toggle="collapse" href="#collapseExample" class="material-icons">expand_less </span>
+                    </div>
+                    <div class="col-11 title-read d-flex flex-column pl-1 ">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-star">
+                            <div class="d-flex justify-content-center align-items-star">
+                              <h5 class="card-title name-dis">Mike From CodeSpectre</h5> <span class="date">• Aug
+                                22</span>
+                            </div>
+                            <div><button type="button" class="btn btn-light" data-container="body" data-toggle="popover"
+                                data-placement="bottom" data-content="Copy Link <br> Report abuse"> ...
+                              </button></div>
+                          </div>
+                          <br>
+                          <p class="card-text">Thanks for sharing</p>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row  no-gutters ml-md-5 pt-3 pl-4  justify-content-start  align-items-center flex-nowrap">
+                    <div class="heart d-flex flex-row">
+                      <div><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                          </path>
+                        </svg></div>
+                      <div>6</div>
+                      <div class="d-none d-md-block pl-md-1"><span>likes</span></div>
+                    </div>
+  
+                    <div class="comments d-flex flex-row">
+                      <div><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                          </path>
+                        </svg></div>
+                      <div class="d-none d-md-block pl-md-1"> <span>Reply</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!--code-->
+            <div class="row  no-gutters ml-md-5 pt-3  justify-content-center  align-items-center flex-nowrap">
+              <div class="msge ">Code of Conduct</div>
+              <div class="pl-3"> • </div>
+              <div class="pl-3"> Report abuse</div>
+            </div>
+          </div>
+          <!--read next-->
+          <article class=" read">
+            <div class="container ">
+              <h5 class="card-title"> Read next</h5>
+              <div class="row no-gutters align-items-center pt-4">
+                <div class="col-1 avatar-read "><img src="images/1read.png"></div>
+                <div class="col-11 title-read d-flex flex-column ">
+                  <div><a class="nav-link" href="post.html">References are first class citizens in DML ( the new JQuery,
+                      at least, for me )</a></div>
+                  <div class="name-avatar pl-3">artidev - Aug 19 </div>
+                </div>
+              </div>
+              <div class="row no-gutters align-items-center pt-4">
+                <div class="col-1 avatar-read "><img src="images/2read.png"></div>
+                <div class="col-11 title-read d-flex flex-column ">
+                  <div><a class="nav-link" href="post.html">My goals for the next 8 weeks with HNG internship 8.0</a>
+                  </div>
+                  <div class="name-avatar pl-3 ">Jhon adekoya - Aug 19 </div>
+                </div>
+              </div>
+              <div class="row no-gutters align-items-center pt-4">
+                <div class="col-1 avatar-read "><img src="images/3read.png"></div>
+                <div class="col-11 title-read d-flex flex-column ">
+                  <div><a class="nav-link" href="post.html">How to make a guessing game in JavaScript</a></div>
+                  <div class="name-avatar  pl-3">The Vik - Aug 15 </div>
+                </div>
+              </div>
+              <div class="row no-gutters align-items-center pt-4 pb-4">
+                <div class="col-1 avatar-read "><img src="images/4read.png"></div>
+                <div class="col-11 title-read d-flex flex-column ">
+                  <div><a class="nav-link" href="post.html">10 Top Cryptocurrency Exchange Development Company In the
+                      USA</a></div>
+                  <div class="name-avatar  pl-3">milad - Aug 11 </div>
+                </div class="mb-2">
+              </div>
+            </div>
+          </article>
+      </main>
+      
+      <!---------------------------------------------------- final del main--------------------------------------->
+  
+  
+      <!---------------------------------------------------- Aside Derechoooo--------------------------------------->
+      <div id="aside-right" class=" d-none d-md-block col-md-4 col-lg-4 " >
+        
+        <div class="card user-post flex-md-column justify-content-md-center ml-3 " >
+            <div class="header pt-md-2 d-md-flex flex-md-row align-items-center">
+                <div class="avatar"><img src="images/1avatar.png"></div>
+                <div class="name-avatar pt-md-2">   Suprabha</div>
+            </div>
+  
+            <div class=" mt-2 ml-4 mr-4">  <button name="button" type="button"
+                        class="w-100  btn-follow">Follow</button> </div>
+            <div class="ar_base_padding mt-2">
+                  <div>🔥 New JS, CSS, HTML articles every week </div>
+                  <div>🔥 Frontend engineer @gojekindonesia  👩🏻‍💻</div>
+                  <div> http://instagram.com/suprabhasupi</div>
+            </div>
+            <div class="ar_base_padding2 mt-2">
+              <article>LOCATION</article>
+              <article>India</article>
+            </div>
+            <div class="ar_base_padding2 mt-2">
+              <article>WORK</article>
+              <article>Frontend Engineer</article>
+            </div>
+            <div class="ar_base_padding2 mt-2">
+              <article>JOINED</article>
+              <article>25 Jun 2018</article>
+            </div>       
+         </div>
+        <!--2do cart-->
+        <div class="card user-more flex-md-column justify-content-md-center ml-3 mt-2 " >
+          <div class="as_header d-flex flex-nowrap align-items-baseline justify-content-around ">
+            <h3 class="ar_sec2_header_strong">More from </h3>
+            <a href="/listings" class="ar_sec2_header_small2"><b><h3>Suprabha</h3></b></a>
+          </div>
+          <div>
+            <ul class="list-group ">
+              <li class="ar_list_style">
+                  <div class="ar_art">
+                      <a class="ar_href"
+                          href="/listings/products/bakup-io-is-your-company-data-safe-let-us-take-away-the-stress-of-backup-management-for-you-152g">
+                          <div>Object Equality in JavaScript</div>
+                          <div class="ar_color_secundary">vascript #beginners #webdev #tutorial</div>
+                      </a>
+                  </div>
+              </li>
+              <li class="ar_list_style">
+                  <div class="ar_art">
+                      <a class="ar_href"
+                          href="/listings/education/mastering-laravel-validation-rules-book-32gd">
+                          <div>GitHub 10 Repos for JavaScript Developer</div>
+                          <div class="ar_color_secundary">#javascript #webdev #beginners #github</div>
+                      </a>
+                  </div>
+              </li>
+              <li class="ar_list_style">
+                  <div class="ar_art">
+                      <a class="ar_href"
+                          href="/listings/collabs/javascript-illustrated-a-free-handbook-of-important-js-concepts-2f08">
+                          <div>Regular vs Arrow Function</div>
+                          <div class="ar_color_secundary">#javascript #beginners #webdev #tutorial</div>
+                      </a>
+                  </div>
+              </li>
+          </ul>
+  
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <footer class="container-fluid bg-4 text-center ">
+    <div class="row justify-content-center align-content-center pt-md-4">
+       <div class="col-lg-10"> <B>DEV Community</B> – A constructive and inclusive social network for software developers. With you every step of your journey. </div>
+       <div class="col-12">Built on <B>Forem</B> — the <B>open source</B> software that powers <B>DEV</B> and other inclusive communities. </div>
+       <div class="col-12"> Made with love and <B>Ruby on Rails.</B> DEV Community © 2016 - 2021.</div>
+       <div class="col-12 "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="a60ewjo8goayredw84b0fn0qsgv47ozs" class="crayons-icon crayons-icon--default"><title id="a60ewjo8goayredw84b0fn0qsgv47ozs">Forem logo</title>
+        <g clip-path="url(#clip0)" fill="#1AB3A6">
+            <path d="M4.603 1.438a8.056 8.056 0 017.643 5.478 8.543 8.543 0 00-3.023 5.968H8.054C3.606 12.884 0 9.296 0 4.87V1.468a.03.03 0 01.03-.03h4.573zM23.97 6.515a.03.03 0 01.03.03v2.833c0 4.11-3.354 7.442-7.491 7.442h-2.881v5.726h-2.305V14.53l.022-1.145c.294-3.843 3.526-6.87 7.469-6.87h5.155z"></path>
+        </g>
+        <defs>
+            <clipPath id="clip0">
+                <path fill="#fff" d="M0 0h24v24H0z"></path>
+            </clipPath>
+        </defs> </svg>
+       </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
