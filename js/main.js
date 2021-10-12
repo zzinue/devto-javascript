@@ -228,8 +228,14 @@ $( '.Del' ).on( 'click', function() {
 });
 
 
-$( '.buttonFilter' ).on( 'click', function() {
-//console.log("Test")
-let valor = $("#textFilter").val()
-console.log(valor)
-});
+$('.buttonFilter').on('click', function() {
+    //console.log("Test")
+    let valor = $("#textFilter").val()
+    $('article').each(function() {
+      const $this = $(this);
+      const artitle = $this.find('p').text().trim().toLowerCase();
+      const incl = artitle.includes(valor.trim().toLowerCase());
+      $this.toggleClass('hide', valor.length > 0 && !incl);
+    });
+    console.log(valor)
+  });
