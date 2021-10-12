@@ -1,6 +1,6 @@
 let postsArray = [];
-
-
+let postsArrayFilter = [];
+let dataPostFilter;
 let yourDate = new Date()
 
 
@@ -39,8 +39,7 @@ const createPost = (dataObj) => {
         data: JSON.stringify(dataObj),
         success: (response)=> {
             //console.log(response)
-            window.location.href='index.html';
-            return false;
+
         },
         error: error => {
             console.log(error)
@@ -240,7 +239,103 @@ $('.buttonFilter').on('click', function() {
     console.log(valor)
   });
 
-  $('.Edi').click(function() {
-    window.location.href='editPost.html';
-    return false;
+
+///// agregar editar
+
+$(".Edi").click(function(){
+    const valorEdit = $(this).val()
+    location.href = "editPost.html";
+    console.log(valorEdit)
 });
+
+/* $('.Edi').click(function() {
+    const valorEdit = $(this).val()
+    sendNewPage(valorEdit)
+    //window.location.href='editPost.html';
+    //return valorEdit;
+});
+
+const sendNewPage = (key) => {
+    window.location.href='editPost.html';
+} */
+
+/* 
+getDataFilter(valorEdit)
+
+const getDataFilter = (keyData) => {
+      console.log(keyData)
+    $.ajax({
+        method: "GET",
+        url: `https://devtojs-default-rtdb.firebaseio.com/Post/${keyData}.json`,
+        success: response => { 
+            // console.log('response al terminar la peticion',response)
+          
+            dataPostFilter = response
+                
+
+            console.log(dataPostFilter)
+            createPostEdit(dataPostFilter)
+
+
+        },
+        error: error => {
+            console.log(error)
+        },
+        async: false
+    })
+    // console.log(products)
+    return dataPostFilter
+}
+
+
+const printPostEdit = arrayPotsEdit => {
+
+    let firstPost = [];
+    firstPost.push(arrayPotsEdit);
+    //console.log(firstPost)
+    let allPost = firstPost.reduce((acc, posts) => {
+        let {
+            addCoverImage,
+            uploadImage,
+            postTitle,
+            postContent,
+            user,
+            today} = posts
+
+    //console.log(posts)
+        const cardPost = `
+        <div class="d-flex flex-column "> 
+        <div class="col-12 col-lg-10">
+            <div class="card" style="width: 50rem; height: 50rem;">
+                <div class="card-body">
+                    <input class="font-weight-bold" name="name" style="width: 40rem;" id="Add" type="text" placeholder=${addCoverImage}><br>   
+                    <input class="font-weight-bolder" style="width: 40rem;" name="name" id="Upload" type="text" placeholder=${uploadImage}><br>   
+                </div>
+
+                <textarea style="font-size: 30px; font-weight: bolder;" class="crayons-textfield crayons-textfield--ghost fs-3xl m:fs-4xl l:fs-5xl fw-bold s:fw-heavy lh-tight" type="text" id="article-form-title" placeholder=${postTitle} autocomplete="off" data-gramm_editor="false" aria-label="Post Title" autofocus="" style="min-height: 62px; max-height: 62px;"></textarea>
+                <textarea style="font-size: 20px;" aria-label="Post Content" name="body_markdown" placeholder=${postContent} class="crayons-textfield crayons-textfield--ghost crayons-article-form__body__field ff-monospace fs-l h-100" data-gramm_editor="false" id="article_body_markdown" data-mention-autocomplete-active="true" style="min-height: 27px;"></textarea>
+              </div>
+        </div>
+        <div class="container">
+            <div class="d-flex flex-row">
+                <button value="" class="Editar btn btn-primary">Editar <i class="fas fa-cart-plus"></i></button>
+            </div>
+
+    </div>
+</div>`
+return acc + cardPost
+}, "")
+
+}
+ */
+//const listEdit = document.querySelectorAll("#container-id")
+
+//console.log(listEdit)
+/* 
+const createPostEdit = arrayPotsEdit => {
+    //console.log(arrayPotsEdit)
+    
+    listEdit.innerHTML = printPostEdit(arrayPotsEdit)
+}
+
+//printPostEdit(arrayPotsEdit) */
