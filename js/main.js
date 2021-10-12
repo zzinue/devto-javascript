@@ -39,6 +39,7 @@ const createPost = (dataObj) => {
         data: JSON.stringify(dataObj),
         success: (response)=> {
             //console.log(response)
+            window.location.href='index.html';
 
         },
         error: error => {
@@ -47,6 +48,21 @@ const createPost = (dataObj) => {
     })
 }
 
+const editPost = (dataObj) => {
+    $.ajax({
+        method: "POST", 
+        url: "https://devtojs-default-rtdb.firebaseio.com/editPost.json",
+        data: JSON.stringify(dataObj),
+        success: (response)=> {
+            //console.log(response)
+            location.href = "editPost.html"
+
+        },
+        error: error => {
+            console.log(error)
+        }
+    })
+}
 
 
 const getData = () => {
@@ -66,6 +82,7 @@ const getData = () => {
             //console.log(postsArray)
 
             printPost(postsArray)
+            //printPostEdit(postsArray)
 
         },
         error: error => {
@@ -200,7 +217,6 @@ const printPost = arrayPots => {
     //console.log(allPost)
     list.innerHTML = allPost
 }
-
 getData()
 
 
@@ -244,9 +260,9 @@ $('.buttonFilter').on('click', function() {
 
 $(".Edi").click(function(){
     const valorEdit = $(this).val()
-    location.href = "editPost.html";
-    console.log(valorEdit)
+    editPost(valorEdit)
 });
+
 
 /* $('.Edi').click(function() {
     const valorEdit = $(this).val()
