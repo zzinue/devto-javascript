@@ -266,6 +266,10 @@ button {
   box-shadow: transparent;
 }
 
+article.hide {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -603,4 +607,8 @@ nav #avatar {
 
 .Derecho {
   margin-top: 40px;
+}
+
+article.hide {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
