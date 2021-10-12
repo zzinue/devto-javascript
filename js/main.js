@@ -10,7 +10,6 @@ $('.chkd').click(function() {
 });
 
 
-
 $( '.Publish' ).on( 'click', function() {
 
  
@@ -111,9 +110,9 @@ const printPost = arrayPots => {
         </div>    
     
         <div class="post">
-            <p>
+            <p><a href="editPost.html">
                ${postTitle}
-            </p>
+            </a></p>
         </div>
     
         <div class="hashtags">
@@ -133,7 +132,7 @@ const printPost = arrayPots => {
             </span> 
             </div>
         <div> 4 min read 
-            <button>Save</button>
+            <button data-product-id="${id}" value="${id}" class="Edi btn btn-danger">Editar <i class="fas fa-cart-plus"></i></button>
             <button data-product-id="${id}" value="${id}" class="Del btn btn-danger">Eliminar <i class="fas fa-cart-plus"></i></button>
             </div>
                 
@@ -168,7 +167,7 @@ const printPost = arrayPots => {
         </div>    
     
         <div class="post">
-            <p>
+            <p href="editPost.html">
                ${postTitle}
             </p>
         </div>
@@ -190,7 +189,7 @@ const printPost = arrayPots => {
             </span> 
             </div>
         <div> 4 min read 
-            <button>Save</button>
+            <button data-product-id="${id}" value="${id}" class="Edi btn btn-danger">Editar <i class="fas fa-cart-plus"></i></button>
             <button data-product-id="${id}" value="${id}" class="Del btn btn-danger">Eliminar <i class="fas fa-cart-plus"></i></button>
             </div>
                 
@@ -240,3 +239,8 @@ $('.buttonFilter').on('click', function() {
     });
     console.log(valor)
   });
+
+  $('.Edi').click(function() {
+    window.location.href='editPost.html';
+    return false;
+});
