@@ -227,6 +227,7 @@ $( '.Del' ).on( 'click', function() {
 
 });
 
+$('.buscador-form').on('submit', (e) => {e.preventDefault()});
 
 $('.buttonFilter').on('click', function() {
     //console.log("Test")
