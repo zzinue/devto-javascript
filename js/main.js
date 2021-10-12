@@ -49,6 +49,7 @@ const createPost = (dataObj) => {
     })
 }
 
+
 const getData = () => {
     let dataPost
     $.ajax({
@@ -64,6 +65,7 @@ const getData = () => {
                 return {...post, id: key}
             })
             //console.log(postsArray)
+
             printPost(postsArray)
 
         },
@@ -75,6 +77,8 @@ const getData = () => {
     // console.log(products)
     return dataPost
 }
+
+
 
 const printPost = arrayPots => {
     let list = document.querySelector(".auto_card")
@@ -158,4 +162,11 @@ $( '.Del' ).on( 'click', function() {
     console.log(valor)
     deletePost(valor)
 
+});
+
+
+$( '.buttonFilter' ).on( 'click', function() {
+//console.log("Test")
+let valor = $("#textFilter").val()
+console.log(valor)
 });
