@@ -165,6 +165,7 @@ const printPost = arrayPots => {
         <div> 4 min read 
             <button data-product-id="${id}" value="${id}" class="Edi btn btn-danger">Editar <i class="fas fa-cart-plus"></i></button>
             <button data-product-id="${id}" value="${id}" class="Del btn btn-danger">Eliminar <i class="fas fa-cart-plus"></i></button>
+            <button data-product-id="${id}" value="${id}" class="Vie btn btn-danger">View <i class="fas fa-cart-plus"></i></button>
             </div>
                 
         </div>
@@ -222,6 +223,7 @@ const printPost = arrayPots => {
         <div> 4 min read 
             <button data-product-id="${id}" value="${id}" class="Edi btn btn-danger">Editar <i class="fas fa-cart-plus"></i></button>
             <button data-product-id="${id}" value="${id}" class="Del btn btn-danger">Eliminar <i class="fas fa-cart-plus"></i></button>
+            <button data-product-id="${id}" value="${id}" class="Vie btn btn-danger">View <i class="fas fa-cart-plus"></i></button>
             </div>
                 
         </div>
@@ -283,4 +285,10 @@ $("#Post").click(function(){
     var key = valorPost.getAttribute("value");
     console.log(key)
     checkPost(key)
+});
+
+$(".Vie").click(function(){    
+    const valorP = $(this).val()
+    console.log(key)
+    checkPost(valorP)
 });
